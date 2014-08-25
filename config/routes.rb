@@ -1,5 +1,12 @@
 Portfolio::Application.routes.draw do
+
   root "pages#home"
+  
+  get "lamp" => "pages#lamp" #creates lamp_path
+  get "trustworthy" => "pages#trustworthy" #creates lamp_path
+  
+  
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
