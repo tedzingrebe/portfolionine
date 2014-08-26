@@ -19,6 +19,7 @@
 html, body{
 	margin: 0;
 	padding: 0;
+	height: 100%;
 }
 div{
 	display:block;
@@ -110,6 +111,7 @@ a{
 	display: block;
 	height: 100%;
 	background-repeat: no-repeat;
+	text-decoration:none;
 	background-size: 100%;
 }
 .stdSiteNav{
@@ -202,13 +204,13 @@ a{
 	opacity:1;
 }
 #email:hover{
-	background-image:url(../img/icons/email-hover.jpg);
+	background-image:url(http://tzportfolio.s3.amazonaws.com/icons/email-hover.jpg);
 }
 #linkedIn:hover{
-	background-image:url(../img/icons/linkedIn-hover.jpg);
+	background-image:url(http://tzportfolio.s3.amazonaws.com/icons/linkedIn-hover.jpg);
 }
 #facebook:hover{
-	background-image:url(../img/icons/facebook-hover.jpg);
+	background-image:url(http://tzportfolio.s3.amazonaws.com/icons/facebook-hover.jpg);
 }
 /* Backgrounds */
 #header{
@@ -222,7 +224,7 @@ a{
 }
 #projects.wrap{
 	background-color: lightslategrey;
-	background: url(../img/backgrounds/bg_toolShop.jpg) no-repeat center center fixed;
+	background: url(http://tzportfolio.s3.amazonaws.com/backgrounds/bg_toolShop.jpg) no-repeat center center fixed;
 	background-size: cover;	
 	-moz-background-size: cover;
 	-webkit-background-size: cover;
@@ -230,7 +232,7 @@ a{
 }
 #products.wrap{
 	background-color: lightslategrey;
-	background: url(../img/backgrounds/bg_Library.jpg) no-repeat center center fixed;
+	background: url(http://tzportfolio.s3.amazonaws.com/backgrounds/bg_Library.jpg) no-repeat center center fixed;
 	background-size: cover;	
 	-moz-background-size: cover;
 	-webkit-background-size: cover;
@@ -238,7 +240,7 @@ a{
 }
 #details.wrap{
 	background-color: lightslategrey;
-	background: url(../img/backgrounds/bg_spotlight.jpg) no-repeat center center fixed;
+	background: url(http://tzportfolio.s3.amazonaws.com/backgrounds/bg_spotlight.jpg) no-repeat center center fixed;
 	background-size: cover;	
 	-moz-background-size: cover;
 	-webkit-background-size: cover;
@@ -246,7 +248,7 @@ a{
 }
 #samples.wrap{
 	background-color: lightslategrey;
-	background: url(../img/backgrounds/gallery2.jpg) no-repeat center center fixed;
+	background: url(http://tzportfolio.s3.amazonaws.com/backgrounds/gallery2.jpg) no-repeat center center fixed;
 	background-size: cover;	
 	-moz-background-size: cover;
 	-webkit-background-size: cover;
@@ -354,7 +356,7 @@ a{
 	background-repeat: no-repeat;
 	text-decoration:none;
 	z-index: 2;
-	bottom: 30;
+	bottom: 30px;
 }
 .anchor{
 	position: relative;
@@ -506,14 +508,14 @@ a{
 	-o-transition: -o-transform 900ms,opacity 900ms;
 }
 .go:hover{
-	background-image:url(../img/icons/arrow.png);
+	background-image:url(http://tzportfolio.s3.amazonaws.com/icons/arrow.png);
 	background-position: center right;	
 }
 .play:hover{
-	background-image:url(../img/icons/play2.png);
+	background-image:url(http://tzportfolio.s3.amazonaws.com/icons/play2.png);
 }
 .enlarge:hover{
-	background-image:url(../img/icons/enlarge.png);
+	background-image:url(http://tzportfolio.s3.amazonaws.com/icons/enlarge.png);
 }
 /* hover copy */
 .eCopy{
