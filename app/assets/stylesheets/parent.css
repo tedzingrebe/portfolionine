@@ -2,19 +2,19 @@
 /* CSS Document */
 @font-face {
     font-family: 'AvenirMedium';
-    src: url('../fonts/avenirmedium.eot');
-    src: url('../fonts/avenirmedium.eot') format('embedded-opentype'),
-         url('../fonts/avenirmedium.woff') format('woff'),
-         url('../fonts/avenirmedium.ttf') format('truetype'),
-         url('../fonts/avenirmedium.svg#AvenirMedium') format('svg');
+    src: url('avenirmedium.eot');
+    src: url('avenirmedium.eot') format('embedded-opentype'),
+         url('avenirmedium.woff') format('woff'),
+         url('avenirmedium.ttf') format('truetype'),
+         url('avenirmedium.svg#AvenirMedium') format('svg');
 }
 @font-face {
     font-family: 'AvenirRoman';
-    src: url('../fonts/avenirroman.eot');
-    src: url('../fonts/avenirroman.eot') format('embedded-opentype'),
-         url('../fonts/avenirroman.woff') format('woff'),
-         url('../fonts/avenirroman.ttf') format('truetype'),
-         url('../fonts/avenirroman.svg#AvenirRoman') format('svg');
+    src: url('avenirroman.eot');
+    src: url('avenirroman.eot') format('embedded-opentype'),
+         url('avenirroman.woff') format('woff'),
+         url('avenirroman.ttf') format('truetype'),
+         url('avenirroman.svg#AvenirRoman') format('svg');
 }
 html, body{
 	margin: 0;

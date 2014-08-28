@@ -4,7 +4,7 @@ Portfolio::Application.routes.draw do
   
   get "landing" => "pages#landing" #creates landing_path
   get "lamp" => "pages#lamp" #creates lamp_path
-  get "trustworthy" => "pages#trustworthy" #creates lamp_path
+  get "trustworthy" => "pages#trustworthy" #creates trustworthy_path
   
   
   
