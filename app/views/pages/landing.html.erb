@@ -76,13 +76,11 @@
 			</div>
 			
 			<div class="projectGallery">
-					<div id="projectLamp" class="webSampleContainer" style="background-image:url(http://tzportfolio.s3.amazonaws.com/landing/interestingStrip.jpg);">
-										<a id="projectLamp" class="projectWeb" href="lamp.html" data-caption="eCLTC Program Home Page">
-											<span class="go">
-												<h3 id="projectCopyWeb" class="eCopy">View Project</h3>
-											</span>
-										</a>
-
+					<div id="projectLamp" class="webSampleContainer" style="background-image:url(<%= image_url 'http://tzportfolio.s3.amazonaws.com/landing/interestingStrip.jpg' %>);">
+						<%= link_to "", { controller: :pages, action: :lamp }, :id => "projectLamp", :class => "projectWeb" %>
+						<span class="go">
+							<h3 id="projectCopyWeb" class="eCopy">View Project</h3>
+						</span>
 					</div>
 			</div>
 			
