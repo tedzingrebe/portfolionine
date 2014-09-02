@@ -77,12 +77,23 @@
 			
 			<div class="projectGallery">
 					<div id="projectLamp" class="webSampleContainer" style="background-image:url(<%= image_url 'http://tzportfolio.s3.amazonaws.com/landing/interestingStrip.jpg' %>);">
+<<<<<<< HEAD
+<<<<<<< HEAD
 						<%= link_to 'lamp', :id => "projectLamp", :class => "projectWeb" do %>
+=======
+						<%= link_to lamp_path, :id => "projectLamp", :class => "projectWeb" do %>
+>>>>>>> FETCH_HEAD
+=======
+						<%= link_to lamp_path, { controller: :pages, action: :lamp }, :id => "projectLamp", :class => "projectWeb" do%>
+>>>>>>> parent of 43a2368... pages work
 						<span class="go">
 							<h3 id="projectCopyWeb" class="eCopy">View Project</h3>
 						</span>
 						<% end %>
+<<<<<<< HEAD
 						
+=======
+>>>>>>> FETCH_HEAD
 					</div>
 			</div>
 			
