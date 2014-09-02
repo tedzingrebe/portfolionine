@@ -4,11 +4,8 @@ Portfolio::Application.routes.draw do
   get "projects" => "pages#landing.html", :anchor => "aProjects" #creates landing_path
   get "landing" => "pages#landing" #creates landing_path
   get "lamp" => "pages#lamp" #creates lamp_path
-  get "community" => "pages#hpn" #creates community_path
-  get "ap" => "pages#ap" #creates ap_path
   get "trustworthy" => "pages#trustworthy" #creates trustworthy_path
-  get "quickstart" => "pages#quickstart" #creates quickstart_path
-  get "ecltc" => "pages#ecltc" #creates ecltc_path
+  
   
   
   # The priority is based upon order of creation: first created -> highest priority.

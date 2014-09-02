@@ -80,6 +80,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 						<%= link_to 'lamp', :id => "projectLamp", :class => "projectWeb" do %>
 =======
 						<%= link_to lamp_path, :id => "projectLamp", :class => "projectWeb" do %>
@@ -90,6 +91,9 @@
 =======
 						<%= link_to lamp_path, :id => "projectLamp", :class => "projectWeb" do %>
 >>>>>>> FETCH_HEAD
+=======
+						<%= link_to lamp_path, { controller: :pages, action: :lamp }, :id => "projectLamp", :class => "projectWeb" do%>
+>>>>>>> parent of 43a2368... pages work
 						<span class="go">
 							<h3 id="projectCopyWeb" class="eCopy">View Project</h3>
 						</span>
@@ -118,54 +122,52 @@
 			<div class="sectionTitle"><h1 class="bottomMg">PRODUCT LIBRARY</h1></div>
 			
 			<div class="productGallery">
-					<div id="productHpn" class="webSampleContainer" style="background-image:url(<%= image_url 'http://tzportfolio.s3.amazonaws.com/landing/bannerHpn.jpg' %>);">
-						<%= link_to community_path, :id => "productHpn", :class => "productSample" do %>
+				<div id="productHpn" class="webSampleContainer" style="background-image:url(http://tzportfolio.s3.amazonaws.com/landing/bannerHpn.jpg);">
+					<a id="productHpn" class="productSample" href="hpn.html" data-caption="eCLTC Program Home Page">
 						<span class="go">
-							<h3 id="productCopy" class="eCopy">View Product</h3>
+						<h3 id="productCopy" class="eCopy">View Product</h3>
 						</span>
-						<% end %>
-					</div>
+					</a>
+				</div>
 			</div>
-			
 			
 				<div class="productGallery">
 					<div id="productAp" class="webSampleContainer" style="background-image:url(http://tzportfolio.s3.amazonaws.com/landing/bannerAp.jpg);">
-						<%= link_to ap_path, :id => "productAp", :class => "productSample" do %>
-						<span class="go">
+						<a id="productAp" class="productSample" href="ap.html" data-caption="eCLTC Program Home Page">
+							<span class="go">
 							<h3 id="productCopy" class="eCopy">View Product</h3>
-						</span>
-						<% end %>
+							</span>
+						</a>
 					</div>
 				</div>
 				
 				<div class="productGallery">
 					<div id="productTs" class="webSampleContainer" style="background-image:url(http://tzportfolio.s3.amazonaws.com/landing/bannerTs.jpg);">
-						<%= link_to trustworthy_path, :id => "productTs", :class => "productSample" do %>
-						<span class="go">
+						<a id="productTs" class="productSample" href="ts.html" data-caption="eCLTC Program Home Page">
+							<span class="go">
 							<h3 id="productCopy" class="eCopy">View Product</h3>
-						</span>
-						<% end %>
+							</span>
 						</a>
 					</div>
 				</div>
 				
 				<div class="productGallery">
 					<div id="productTsqs" class="webSampleContainer" style="background-image:url(http://tzportfolio.s3.amazonaws.com/landing/bannerTsqs.jpg);">
-						<%= link_to quickstart_path, :id => "productTsqs", :class => "productSample" do %>
-						<span class="go">
+						<a id="productTsqs" class="productSample" href="tsqs.html" data-caption="eCLTC Program Home Page">
+							<span class="go">
 							<h3 id="productCopy" class="eCopy">View Product</h3>
-						</span>
-						<% end %>
+							</span>
+						</a>
 					</div>
 				</div>
 
 				<div class="productGallery">
 					<div id="productEcltc" class="webSampleContainer" style="background-image:url(http://tzportfolio.s3.amazonaws.com/landing/bannerEcltc.jpg);">
-						<%= link_to ecltc_path, :id => "productEcltc", :class => "productSample" do %>
-						<span class="go">
+						<a id="productEcltc" class="productSample" href="cltc.html" data-caption="eCLTC Program Home Page">
+							<span class="go">
 							<h3 id="productCopy" class="eCopy">View Product</h3>
-						</span>
-						<% end %>
+							</span>
+						</a>
 					</div>
 				</div>
 
@@ -206,9 +208,16 @@
 	<a id="topAnchor" href="#aTop" style="background-image:url(http://tzportfolio.s3.amazonaws.com/icons/top.png);">&nbsp;</a>
 </div>
 
-
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-<<%= javascript_include_tag "lightboxClasses" %>
+<script type="text/javascript" src="js/jquery.requestAnimationFrame.js"></script>
+<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="js/ilightbox.packed.js"></script>
+<script type="text/javascript" src="js/lightboxClasses.js"></script>
+<script type="text/javascript" src="js/resizeCss.js" /></script>
+<script type="text/javascript" src="js/mobileNav.js"/></script>
+<script type="text/javascript" src="js/adapt.js"/></script>
+<script type="text/javascript" src="js/scroll.js"></script>
 
 </body>
 </html>
