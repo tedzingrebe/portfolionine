@@ -1,7 +1,6 @@
 <html lang="en" xml:lang="en">
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="../../assets/stylesheets/parent.css" type="text/css" media="screen" title="no title" charset="utf-8">
 	
 	<title>Ted Zingrebe</title>
 </head>
@@ -20,8 +19,9 @@
 				<ul>
 					<li><a href="landing.html#aTop">Home</a> |</li>
 					<li><%= link_to 'Projects', landing_path %> |</li>
-					<li><%= link_to 'Projects', landing_path(@lamp, :anchor => "aProjects") %> |</li>
-					<li><%= link_to('Path', landing_path(:anchor => 'aProjects')) %>|</li>
+					<li><%= link_to 'Projects', landing_path(@landing, :anchor => "aProjects") %> |</li>
+					<li><%= link_to "Projects", :action => "landing", :anchor => "aProjects" %>|</li>
+					<li><%= link_to landing_path + "#aProjects", landing_path(@landing) %> |</li>
 					<li><a href="../landing.html#aProducts">Products</a> |</li>
 					<li><a href="#aContact">Contact</a></li>
 				</ul>
@@ -140,6 +140,17 @@
 				<div class="printInnerGallery">
 					<h2 class="mobilePhone">Print Content</h2>
 					<div class="printLeftGallery">
+						
+								<div id="pSamp" class="printSampleContainer" style="background-image:url(<%= image_url 'http://tzportfolio.s3.amazonaws.com/project_lamp/printGalleryCover.jpg' %>);">
+									<%= link_to 'http://tzportfolio.s3.amazonaws.com/project_lamp/gamaInterestingLarge.jpg', :id => "pSamp", :class => "printSample" do %>
+									<span class="enlarge">
+										<h3 id="pCopy" class="eCopy">View Larger</h3>
+									</span>
+									<% end %>
+
+								</div>
+						
+						
 						<div id="pSamp" class="printSampleContainer" style="background-image:url(http://tzportfolio.s3.amazonaws.com/project_lamp/printGalleryCover.jpg);">
 							<a id="pSamp" class="printSample" href="http://tzportfolio.s3.amazonaws.com/project_lamp/gamaInterestingLarge.jpg"  data-caption="Lamp Ad and Poster #1">&nbsp;
 								<span class="enlarge">
@@ -208,6 +219,6 @@
 	</div>
 	<a id="topAnchor" href="#aTop" style="background-image:url(http://tzportfolio.s3.amazonaws.com/icons/top.png);">&nbsp;</a>
 </div>
-
+<%= javascript_include_tag "lightboxClasses" %> 
 </body>
 </html>
