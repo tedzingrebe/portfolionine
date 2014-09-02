@@ -13,5 +13,8 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= ilightbox
+//= jquery.requestAnimationFrame
+//= lightboxClasses
 //= require_tree .
 
