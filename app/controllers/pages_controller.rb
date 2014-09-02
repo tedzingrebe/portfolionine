@@ -5,9 +5,22 @@ class PagesController < ApplicationController
   def landing
   end
   
+  def lamp
+  end
+  
+  def community
+  end
+  
+  def ap
+  end
+
   def trustworthy
   end
   
-  def lamp
+  def quickstart
   end
+  
+  def ecltc
+  end
+  
 end
