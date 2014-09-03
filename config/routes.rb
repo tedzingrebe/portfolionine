@@ -1,5 +1,6 @@
 Portfolio::Application.routes.draw do
 
+  devise_for :users
   root "pages#home"
   get "projects" => "pages#landing.html", :anchor => "aProjects" #creates landing_path
   get "landing" => "pages#landing" #creates landing_path

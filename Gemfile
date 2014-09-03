@@ -36,6 +36,11 @@ gem 'jbuilder', '~> 1.2'
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
+  
+  
+  # Devise is for users, I hope I don't fuck this up
+gem 'devise'
+
 end
 
 # Use ActiveModel has_secure_password
