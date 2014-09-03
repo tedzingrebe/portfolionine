@@ -22,4 +22,7 @@ class PagesController < ApplicationController
   
   def ecltc
   end
+  
+  def add
+  end
 end

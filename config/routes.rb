@@ -10,6 +10,7 @@ Portfolio::Application.routes.draw do
   get "trustworthy" => "pages#trustworthy" #creates trustworthy_path
   get "quickstart" => "pages#quickstart" #creates quickstart_path
   get "ecltc" => "pages#ecltc" #creates ecltc_path
+  get "add" => "pages#add" #creates add_path
   
   
   
