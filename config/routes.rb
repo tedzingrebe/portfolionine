@@ -1,7 +1,10 @@
 Portfolio::Application.routes.draw do
 
   devise_for :users
-  root "pages#home"
+  devise_scope :user do
+    root :to => 'pages#home'
+  end
+  get "home" => "pages#home.html" #creates home_path
   get "projects" => "pages#landing.html", :anchor => "aProjects" #creates landing_path
   get "landing" => "pages#landing" #creates landing_path
   get "lamp" => "pages#lamp" #creates lamp_path

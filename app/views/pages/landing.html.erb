@@ -21,6 +21,7 @@
 					<li><%= link_to 'Projects', landing_path(:id => "#aProjects") %> |</li>
 					<li><a href="landing.html#aProducts">Products</a> |</li>
 					<li><a href="#aContact">Contact</a></li>
+					<li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
 				</ul>
 			</div>
 			
