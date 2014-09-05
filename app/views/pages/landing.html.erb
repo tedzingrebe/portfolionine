@@ -21,7 +21,7 @@
 					<li><%= link_to 'Projects', landing_path(@lamp, :anchor => "aProjects") %> |</li>
 					<li><%= link_to 'Products', landing_path(@lamp, :anchor => "aProducts") %> |</li>
 					<li><a href="#aContact">Contact</a> |</li>
-					<li><%= link_to "Logout", destroy_user_session_path %></li>
+					<li><%= link_to "Logout", destroy_user_session_path, :method => :delete  %></li>
 				</ul>
 			</div>
 			
@@ -35,7 +35,7 @@
 								<li><a href="landing.html#Products"><img src="http://tzportfolio.s3.amazonaws.com/icons/i-3.png" alt="Icon">Products</a></li>
 								<li><a href="#aContact"><img src="http://tzportfolio.s3.amazonaws.com/icons/i-3.png" alt="Icon">Contact</a></li>
 								<li><img src="http://tzportfolio.s3.amazonaws.com/icons/i-3.png" alt="Icon" style="float:left; margin-right: 7px;">
-									<%= link_to "Logout", destroy_user_session_path, method: :delete %>
+									<%= link_to "Logout", destroy_user_session_path, :method => :delete %>
 								</li>
 							</ul>
 						</li>
