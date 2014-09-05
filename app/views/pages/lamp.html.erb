@@ -1,9 +1,8 @@
 <html lang="en" xml:lang="en">
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="../../assets/stylesheets/parent.css" type="text/css" media="screen" title="no title" charset="utf-8">
 	
-	<title>Ted Zingrebe</title>
+	<title>Ted Zingrebe | Portfolio</title>
 </head>
 <body>
 
@@ -18,13 +17,11 @@
 			
 			<div class="stdSiteNav">
 				<ul>
-					<li><a href="landing.html#aTop">Home</a> |</li>
-					<li><%= link_to 'Projects', landing_path %> |</li>
+					<li><%= link_to 'Home', landing_path %> |</li>
 					<li><%= link_to 'Projects', landing_path(@lamp, :anchor => "aProjects") %> |</li>
-					<li><%= link_to('Path', landing_path(:anchor => 'aProjects')) %>|</li>
-					<li><a href="../landing.html#aProducts">Products</a> |</li>
-					<li><a href="#aContact">Contact</a></li>
-					<li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
+					<li><%= link_to 'Products', landing_path(@lamp, :anchor => "aProducts") %> |</li>
+					<li><a href="#aContact">Contact</a> |</li>
+					<li><%= link_to "Logout", destroy_user_session_path %></li>
 				</ul>
 			</div>
 			
@@ -37,6 +34,9 @@
 								<li><a href="landing.html#Projects"><img src="http://tzportfolio.s3.amazonaws.com/icons/i-3.png" alt="Icon">Projects</a></li>
 								<li><a href="landing.html#Products"><img src="http://tzportfolio.s3.amazonaws.com/icons/i-3.png" alt="Icon">Products</a></li>
 								<li><a href="#aContact"><img src="http://tzportfolio.s3.amazonaws.com/icons/i-3.png" alt="Icon">Contact</a></li>
+								<li><img src="http://tzportfolio.s3.amazonaws.com/icons/i-3.png" alt="Icon" style="float:left; margin-right: 7px;">
+									<%= link_to "Logout", destroy_user_session_path, method: :delete %>
+								</li>
 							</ul>
 						</li>
 					</ul>
@@ -210,7 +210,7 @@
 	<a id="topAnchor" href="#aTop" style="background-image:url(http://tzportfolio.s3.amazonaws.com/icons/top.png);">&nbsp;</a>
 </div>
 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-<%= javascript_include_tag "lightboxClasses" %>
+<script src="http://tzportfolio.s3.amazonaws.com/js/lightboxClasses.js"></script>
 
 </body>
 </html>

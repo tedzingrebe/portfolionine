@@ -87,7 +87,6 @@ a{
 #header{
 	position: fixed !important;
 	box-shadow: 0px 5px 0px rgba(0, 0, 0, 0.03);
-	border-top: 1px solid #d9d9d9;
 	border-bottom: 1px solid #d9d9d9;
 	z-index: 1000;
 }
@@ -568,7 +567,7 @@ a{
 .click-nav ul li ul {
 	position: relative;
 	width: 105px;
-	height: 125px;
+	height: 150px;
 	background: whitesmoke;
 	border: 3px double grey;
 	float: right;
@@ -742,7 +741,7 @@ h1{
 }
 
 /* 598 - 765 */
-@media screen and (min-width: 598px) and (max-width: 765px){
+@media screen and (min-width: 647px) and (max-width: 765px){
 .content, .bodyContent {
 	width: 96%;
 }
@@ -872,7 +871,7 @@ h2{
 }
 
 /* 480 - 597 */
-@media screen and (min-width: 480px) and (max-width: 597px){
+@media screen and (min-width: 480px) and (max-width: 646px){
 
 #overview, #contribution{
 	display:none;
