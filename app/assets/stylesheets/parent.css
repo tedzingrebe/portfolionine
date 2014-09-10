@@ -741,7 +741,7 @@ h1{
 }
 
 /* 598 - 765 */
-@media screen and (min-width: 647px) and (max-width: 765px){
+@media screen and (min-width: 656px) and (max-width: 765px){
 .content, .bodyContent {
 	width: 96%;
 }
@@ -871,7 +871,7 @@ h2{
 }
 
 /* 480 - 597 */
-@media screen and (min-width: 480px) and (max-width: 646px){
+@media screen and (min-width: 480px) and (max-width: 655px){
 
 #overview, #contribution{
 	display:none;
