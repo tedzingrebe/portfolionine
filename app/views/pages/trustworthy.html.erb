@@ -31,11 +31,11 @@
 							<a class="clicker"><img src="http://tzportfolio.s3.amazonaws.com/icons/menu-icon.png" alt="Icon">&nbsp;</a>
 							<ul>
 								<li><a href="landing.html"><img src="http://tzportfolio.s3.amazonaws.com/icons/i-2.png" alt="Icon">Home</a></li>
-								<li><a href="landing.html#Projects"><img src="http://tzportfolio.s3.amazonaws.com/icons/i-3.png" alt="Icon">Projects</a></li>
+								<li><a href="landing.html#Projects"><img src="http://tzportfolio.s3.amazonaws.com/icons/i-3.png" alt="Icon"><%= link_to 'Projects', landing_path(@projects, :anchor => "aProjects") %></a></li>
 								<li><a href="landing.html#Products"><img src="http://tzportfolio.s3.amazonaws.com/icons/i-3.png" alt="Icon">Products</a></li>
 								<li><a href="#aContact"><img src="http://tzportfolio.s3.amazonaws.com/icons/i-3.png" alt="Icon">Contact</a></li>
 								<li><img src="http://tzportfolio.s3.amazonaws.com/icons/i-3.png" alt="Icon" style="float:left; margin-right: 7px;">
-									<%= link_to "Logout", destroy_user_session_path, :method => :delete %>
+									<%= link_to "Logout", destroy_user_session_path, method: :delete %>
 								</li>
 							</ul>
 						</li>
