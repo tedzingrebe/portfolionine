@@ -18,29 +18,47 @@
 			<div class="stdSiteNav">
 				<ul>
 					<li><%= link_to 'Home', landing_path %> |</li>
-					<li><%= link_to 'Projects', landing_path(@lamp, :anchor => "aProjects") %> |</li>
-					<li><%= link_to 'Products', landing_path(@lamp, :anchor => "aProducts") %> |</li>
+					<li><%= link_to 'Projects', landing_path(@landing, :anchor => "aProjects") %> |</li>
+					<li><%= link_to 'Products', landing_path(@landing, :anchor => "aProducts") %> |</li>
 					<li><a href="#aContact">Contact</a> |</li>
-					<li><%= link_to "Logout", destroy_user_session_path, :method => :delete %></li>
+					<li><%= link_to('Logout', destroy_user_session_path) %></li>
 				</ul>
 			</div>
 			
-				<div class="click-nav">
-					<ul class="no-js">
-						<li class="menu">
-							<a class="clicker"><img src="http://tzportfolio.s3.amazonaws.com/icons/menu-icon.png" alt="Icon">&nbsp;</a>
-							<ul>
-								<li><a href="landing.html"><img src="http://tzportfolio.s3.amazonaws.com/icons/i-2.png" alt="Icon">Home</a></li>
-								<li><a href="landing.html#Projects"><img src="http://tzportfolio.s3.amazonaws.com/icons/i-3.png" alt="Icon">Projects</a></li>
-								<li><a href="landing.html#Products"><img src="http://tzportfolio.s3.amazonaws.com/icons/i-3.png" alt="Icon">Products</a></li>
-								<li><a href="#aContact"><img src="http://tzportfolio.s3.amazonaws.com/icons/i-3.png" alt="Icon">Contact</a></li>
-								<li><img src="http://tzportfolio.s3.amazonaws.com/icons/i-3.png" alt="Icon" style="float:left; margin-right: 7px;">
-									<%= link_to "Logout", destroy_user_session_path, :method => :delete %>
-								</li>
-							</ul>
-						</li>
-					</ul>
-				</div>
+			<div class="click-nav">
+				<ul class="no-js">
+					<li class="menu">
+						<a class="clicker"><img src="http://tzportfolio.s3.amazonaws.com/icons/menu-icon.png">&nbsp;</a>
+						<ul>
+							<li>
+							<%= link_to landing_path  do %>
+							<img class="mobileIcon" src="http://tzportfolio.s3.amazonaws.com/icons/i-2.png">
+								Home
+							<% end %>
+							</li>
+							<li>
+							<%= link_to landing_path(@landing, :anchor => "aProjects") do %>
+							<img class="mobileIcon" src="http://tzportfolio.s3.amazonaws.com/icons/i-3.png">
+								Projects
+							<% end %>
+							</li>
+							<li>
+							<%= link_to landing_path(@landing, :anchor => "aProducts") do %>
+							<img class="mobileIcon" src="http://tzportfolio.s3.amazonaws.com/icons/i-3.png">
+								Products
+							<% end %>
+							</li>
+							<li><a href="#aContact"><img class="mobileIcon" src="http://tzportfolio.s3.amazonaws.com/icons/i-3.png">Contact</a></li>
+							<li>
+								<%= link_to destroy_user_session_path do %>
+								<img class="mobileIcon" src="http://tzportfolio.s3.amazonaws.com/icons/i-3.png">
+								Log Out
+								<% end %>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
 		
 		
 	</div>
