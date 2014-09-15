@@ -1,28 +1,49 @@
-<h1>Pages#home</h1>
-<h2>Hello</h2>
+<html lang="en" xml:lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ted Zingrebe | tedzingrebe.com</title>
+	<meta property="og:title" content="Ted Zingrebe | tedzingrebe.com" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://www.tedzingrebe.com" />
+	<meta property="og:description" content="Ted Zingrebe's media portfolio specializing in project/product management, marketing, web and video production." />
+	<meta property="og:locale" content="en_US" />
+</head>
+<body>
 
-hey
-<h2>Log in</h2>
-<div style="background-color:pink;">
-<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div><%= f.label :email %><br />
-  <%= f.email_field :email, autofocus: true %></div>
-
-  <div><%= f.label :password %><br />
-    <%= f.password_field :password, autocomplete: "off" %></div>
-
-  <% if devise_mapping.rememberable? -%>
-    <div><%= f.check_box :remember_me %> <%= f.label :remember_me %></div>
-  <% end -%>
-
-  <div><%= f.submit "Log in" %></div>
-<% end %>
-
-
-  <% if user_signed_in? %>
-
-		<li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
-
-	<% end %> 
-	
+<div id="loginHead" class="wrap">
+	&nbsp;
 </div>
+<div id="loginWrap" class="wrap">
+	<div id="loginContent">
+		<div id="login">
+			<h2>Log in</h2>
+			<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+			  <div><%= f.label :email %><br />
+			  <%= f.email_field :email, autofocus: true %></div>
+
+			  <div><%= f.label :password %><br />
+			    <%= f.password_field :password, autocomplete: "off" %></div>
+
+			  <% if devise_mapping.rememberable? -%>
+			    <div><%= f.check_box :remember_me %> <%= f.label :remember_me %></div>
+			  <% end -%>
+
+			  <div><%= f.submit "Log in" %></div>
+			<% end %>
+
+
+			  <% if user_signed_in? %>
+
+					<li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
+
+				<% end %> 	
+		</div>
+	</div>
+</div>
+
+<div id="loginFoot" class="wrap">
+<p>ted zingrebe | 2014
+</div>
+
+</body>
+</html>
