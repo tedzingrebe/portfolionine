@@ -13,30 +13,32 @@
 <div id="loginHead" class="wrap">
 	&nbsp;
 </div>
-<div id="loginWrap" class="wrap" style="background-image:url(http://tzportfolio.s3.amazonaws.com/backgrounds/bg_toolShop.jpg);">
-	<div id="loginContent">
-		<div id="login">
-			<h2>Log in</h2>
-			<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-			  <div><%= f.label :email %><br />
-			  <%= f.email_field :email, autofocus: true %></div>
+<div id="contentWrap" style="background-image:url(http://tzportfolio.s3.amazonaws.com/backgrounds/bg_toolShop.jpg);">
+	<div id="loginWrap" class="wrap">
+		<div id="loginContent">
+			<div id="login">
+				<h2>Log in</h2>
+				<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+				  <div><%= f.label :email,  :class => "label" %><br />
+				  <%= f.email_field :email, autofocus: true,  :class => "input" %></div>
 
-			  <div><%= f.label :password %><br />
-			    <%= f.password_field :password, autocomplete: "off" %></div>
+				  <div><%= f.label :password,  :class => "label" %><br />
+				    <%= f.password_field :password, autocomplete: "off",  :class => "input" %></div>
 
-			  <% if devise_mapping.rememberable? -%>
-			    <div><%= f.check_box :remember_me %> <%= f.label :remember_me %></div>
-			  <% end -%>
+				  <% if devise_mapping.rememberable? -%>
+				    <div><%= f.check_box :remember_me %> <%= f.label :remember_me ,  :class => "label"%></div>
+				  <% end -%>
 
-			  <div><%= f.submit "Log in" %></div>
-			<% end %>
+				  <div><%= f.submit "Log in" %></div>
+				<% end %>
 
 
-			  <% if user_signed_in? %>
+				  <% if user_signed_in? %>
 
-					<li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
+						<li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
 
-				<% end %> 	
+					<% end %> 	
+			</div>
 		</div>
 	</div>
 </div>
