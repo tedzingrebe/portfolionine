@@ -49,7 +49,7 @@ h2 {
 	-moz-osx-font-smoothing: grayscale;
 
 }
-p, .label, .description1 ul li, .webRightDescription ol li, .videoLeftDescription ol li, .printRightDescription ol li{
+p, .loginCopy, .label, .input, .login, .labelRemember, .description1 ul li, .webRightDescription ol li, .videoLeftDescription ol li, .printRightDescription ol li{
 	font-family: AvenirRoman, Arial, sans-serif;
 	font-size: 1em;
 	-webkit-font-smoothing: antialiased;
@@ -76,42 +76,56 @@ a{
 #loginHead{
 	background:rgba(67, 10, 31, 1);
 	border-bottom: 5px #fff solid;
+	height: 20px;
 }
 #loginWrap{
 	display: table;
 	width: 225px;
-	height: 90%;
-	margin: 0 auto;
+	height: 100%;
+	margin: 0px auto 0px;
 }
-#loginContent{
+#loginContainer{
 	display: table-cell;
-	position: relative;
-	margin: 0 auto;
 	vertical-align: middle;
 }
 #login{
-	display: table-cell;
 	position:relative;
 	vertical-align:middle;
 	background: rgba(67, 10, 31, 0.8);
 	width: 225px;
-	height: 275px;
+	height: 255px;
 	border-radius: 3px 3px 3px 3px;
 	-webkit-border-radius: 3px 3px 3px 3px;
 	-moz-border-radius: 3px 3px 3px 3px;
-	box-shadow: 0px 10px 50px 10px rgba(0, 0, 0, 0.46);
-	-webkit-box-shadow: 0px 10px 50px 10px rgba(0, 0, 0, 0.46);
-	-moz-box-shadow: 0px 10px 50px 10px rgba(0, 0, 0, 0.46);
+	box-shadow: 0px 0px 50px 15px rgba(66, 255, 225, 0.46);
+	-webkit-box-shadow: 0px 0px 50px 15px rgba(66, 255, 225, 0.46);
+	-moz-box-shadow: 0px 0px 50px 15px rgba(66, 255, 225, 0.46);
+}
+.loginCopy{
+	display: block;
+	width: 100%;
+	font-size: 2em;
+	color: whitesmoke;
+	text-align: center;
+	margin: 0px auto 10px auto;
 }
 .label{
+	display: inline-block;
 	color:whitesmoke;
+	margin: 10px 0px 0px 36px;
+}
+.labelRemember{
+	color:whitesmoke;
+	margin-left:5px;	
 }
 .input{
+	display:inherit;	
 	width: 150px;
 	height: 20px;
+	font-size: 12px;
 	border-radius: 5px;
 	text-align: center;
-	margin: 0px 0px 0px 0px;
+	margin: 0px auto 0px auto;
 }
 #loginFoot{
 	background:#353b49;
@@ -120,6 +134,23 @@ a{
 	border-top: 5px #fff solid;
 	color:whitesmoke;
 	text-align:center;
+	height: 20px;
+}
+.login{
+	display:inherit;
+	color: white;
+	border-radius: 2px;
+	border: 0;
+	margin: 15px auto;
+	width: 80px;
+	background-color: #326d92;
+	border-color: #2b5f7f;
+	cursor: pointer;
+	transition: all 0.25s linear;
+}
+.login:hover{
+	background-color: #25516c;
+	border-color: #1c3d51;
 }
 /* Main Structure */
 .wrap{
@@ -405,6 +436,9 @@ a{
 	float: left;
 	height: 0px;
 	width: 0px;
+}
+#aTop{
+	margin-top: -3px;
 }
 #aSampleGalleries, #aProjects, #aProducts{
 	bottom: 57px;
