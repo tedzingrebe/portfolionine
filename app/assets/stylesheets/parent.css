@@ -417,7 +417,9 @@ a{
 	background-position: 65px 5px;	
 }
 #logoLamp{
-	background-position: 65px 5px;	
+	height: 134px;
+	background-size: 93%;
+	background-position: 22px 5px;
 }
 #productImageHpn{
 	height: 513px;
