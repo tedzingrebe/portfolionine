@@ -397,10 +397,27 @@ a{
 }
 
 /* Specific Logo and Landing Style */
-#logoHpn{
-	background-position:20px 5px;
+#logoHpn, #logoAp, #logoTs, #logoQuickstart, #logoEcltc, #logoLamp{
 	height: 104px;
 	background-size: 75%;
+}
+#logoHpn{
+	background-position:20px 5px;	
+}
+#logoAp{
+	background-position: 65px 5px;	
+}
+#logoTs{
+	background-position: 65px 5px;	
+}
+#logoQuickstart{
+	background-position: 57px 5px;	
+}
+#logoEcltc{
+	background-position: 65px 5px;	
+}
+#logoLamp{
+	background-position: 65px 5px;	
 }
 #productImageHpn{
 	height: 513px;
@@ -1174,12 +1191,31 @@ p, .description1 ul li, .webRightDescription ol li, .videoLeftDescription ol li,
 	display: none;
 }
 .productLogoWrap {
-width: 240px;
-height: 77px;
+	width: 240px;
+	height: 77px;
 }
 #logoHpn {
-background-position: -3px 5px;
-background-size: 90%;
+	background-size: 90%;
+	background-position: -3px 5px;
+}
+#logoAp, #logoTs, #logoQuickstart, #logoEcltc{
+	background-size: 100%;
+}
+#logoAp{
+	background-position: 0px 5px;	
+}
+#logoTs{
+	background-position: 0px 5px;	
+}
+#logoQuickstart {
+	background-position: 1px 5px;
+}
+#logoEcltc{
+	background-position: 0px 5px;	
+}
+#logoLamp{
+	background-size: 116%;
+	background-position: -13px 5px;
 }
 /* Sample Galleries */
 .projectGallery{
