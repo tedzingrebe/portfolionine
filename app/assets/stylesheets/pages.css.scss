@@ -1,3 +1,6 @@
 // Place all the styles related to the pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+@include font-face(AvenirMedium, 'AvenirMedium-webfont', $asset-pipeline: true);
+@include font-face(AvenirRoman, 'AvenirRoman-webfont', $asset-pipeline: true);
