@@ -25,7 +25,7 @@ module Portfolio
     # config.i18n.default_locale = :de
     
     # add app/assets/fonts to the asset path
-    config.assets.paths << Rails.root.join("app", "assets", "fonts")
+    config.assets.precompile << /\.(?:svg|eot|woff|ttf)$/
     
     # Required for Heroku
     config.assets.initialize_on_precompile = false

@@ -2,18 +2,3 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-@font-face {
-    font-family: 'AvenirRoman';
-    src: url(font-path('AvenirRoman.eot') + "?#iefix") format('embedded-opentype'),
-         url(font-path('AvenirRoman.woff')) format('woff'), 
-         url(font-path('AvenirRoman.ttf'))  format('truetype'),
-         url(font-path('AvenirRoman.svg') + "#AvenirRoman") format('svg');
-}
-
-@font-face {
-    font-family: 'AvenirMedium';
-    src: url(font-path('AvenirMedium.eot') + "?#iefix") format('embedded-opentype'),
-         url(font-path('AvenirMedium.woff')) format('woff'), 
-         url(font-path('AvenirMedium.ttf'))  format('truetype'),
-         url(font-path('AvenirMedium.svg') + "#AvenirMedium") format('svg');
-}
