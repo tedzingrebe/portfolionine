@@ -11,3 +11,5 @@
  *= require_self
  *= require_tree .
  */
+@include font-face(AvenirMedium, 'AvenirMedium-webfont', $asset-pipeline: true);
+@include font-face(AvenirRoman, 'AvenirRoman-webfont', $asset-pipeline: true);
