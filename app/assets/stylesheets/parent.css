@@ -2,19 +2,19 @@
 /* CSS Document */
 @font-face {
     font-family: 'AvenirMedium';
-    src: asset-url('avenirmedium.eot');
-    src: asset-url('avenirmedium.eot') format('embedded-opentype'),
-         asset-url('avenirmedium.woff') format('woff'),
-         asset-url('avenirmedium.ttf') format('truetype'),
-         asset-url('avenirmedium.svg#AvenirMedium') format('svg');
+    src: url('avenirmedium.eot');
+    src: url('avenirmedium.eot') format('embedded-opentype'),
+         url('avenirmedium.woff') format('woff'),
+         url('avenirmedium.ttf') format('truetype'),
+         url('avenirmedium.svg#AvenirMedium') format('svg');
 }
 @font-face {
     font-family: 'AvenirRoman';
-    src: asset- url('avenirroman.eot');
-    src: asset-url('avenirroman.eot') format('embedded-opentype'),
-         asset-url('avenirroman.woff') format('woff'),
-         asset-url('avenirroman.ttf') format('truetype'),
-         asset-url('avenirroman.svg#AvenirRoman') format('svg');
+    src: url('avenirroman.eot');
+    src: url('avenirroman.eot') format('embedded-opentype'),
+         url('avenirroman.woff') format('woff'),
+         url('avenirroman.ttf') format('truetype'),
+         url('avenirroman.svg#AvenirRoman') format('svg');
 }
 html, body{
 	margin: 0;
