@@ -11,22 +11,3 @@
  *= require_self
  *= require_tree .
  */
-
-@import 'AvenirRoman';
-@import 'AvenirMedium';
-
-@font-face {
-    font-family: 'AvenirRoman';
-    src: url(asset-path('AvenirRoman.eot') + "?#iefix") format('embedded-opentype'),
-         url(asset-path('AvenirRoman.woff')) format('woff'), 
-         url(asset-path('AvenirRoman.ttf'))  format('truetype'),
-         url(asset-path('AvenirRoman.svg') + "#AvenirRoman") format('svg');
-}
-
-@font-face {
-    font-family: 'AvenirMedium';
-    src: url(font-path('AvenirMedium.eot') + "?#iefix") format('embedded-opentype'),
-         url(font-path('AvenirMedium.woff')) format('woff'), 
-         url(font-path('AvenirMedium.ttf'))  format('truetype'),
-         url(font-path('AvenirMedium.svg') + "#AvenirMedium") format('svg');
-}

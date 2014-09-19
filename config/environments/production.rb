@@ -80,4 +80,7 @@ Portfolio::Application.configure do
   
   config.action_mailer.default_url_options = { :host => ' http://tzportfolio.herokuapp.com' }
   
+  #fonts
+  config.assets.paths << Rails.root.join('app', 'assets', 'fonts')
+  config.assets.precompile += %w( .svg .eot .woff .ttf)
 end
