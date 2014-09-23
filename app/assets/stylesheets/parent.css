@@ -34,6 +34,7 @@ h2 {
 	-moz-osx-font-smoothing: grayscale;
 
 }
+
 p, .loginCopy, .label, .input, .login, .labelRemember, .description1 ul li, .webRightDescription ol li, .videoLeftDescription ol li, .printRightDescription ol li{
 	font-family: AvenirRoman, Arial, sans-serif;
 	font-size: 1em;
@@ -47,6 +48,21 @@ p, .loginCopy, .label, .input, .login, .labelRemember, .description1 ul li, .web
 }
 a{
 	color:#F5F5F5;
+}
+.landingStyle1{
+	font-size: 2.5em;
+	margin-top: -30px;
+}
+.landingStyle2{
+	font-size: 2em;
+	color:#F5F5F5;
+}
+.landingStyle3{
+	font-size: 1em;
+	color:#F5F5F5;
+	font-weight: bold;
+	font-style: italic;
+	margin: 20px 30px 10px 30px;
 }
 /* Backgrounds */
 #contentWrap{
