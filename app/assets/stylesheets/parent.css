@@ -10,7 +10,7 @@ div{
 	display:block;
 }
 h1, h2{
-	color:whitesmoke;
+	color:#F5F5F5;
 	text-align: center;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -46,18 +46,64 @@ p, .loginCopy, .label, .input, .login, .labelRemember, .description1 ul li, .web
 	margin:auto auto 0 auto;
 }
 a{
-	color:whitesmoke;
+	color:#F5F5F5;
 }
-/* login */
+/* Backgrounds */
 #contentWrap{
-	background-color: lightslategrey;
-	background: url(http://tzportfolio.s3.amazonaws.com/backgrounds/bg_toolShop.jpg) no-repeat center center fixed;
+	background-color: rgb(119, 136, 153);
+	background: url(http://tzportfolio.s3.amazonaws.com/backgrounds/bg_Login.jpg) no-repeat center center fixed;
 	height:96%;
 	background-size: cover;	
 	-moz-background-size: cover;
 	-webkit-background-size: cover;
 	-o-background-size: cover;
 }
+#header{
+	background-color: rgba(67, 10, 31, 0.7);
+}
+#headerBackground{
+	background-color: rgb(67, 10, 31);
+}
+#intro.wrap{
+	background-color: #353b49;	
+}
+#projects.wrap{
+	background-color: rgb(119, 136, 153);
+	background: url(http://tzportfolio.s3.amazonaws.com/backgrounds/bg_toolShop.jpg) no-repeat center center fixed;
+	background-size: cover;	
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+}
+#products.wrap{
+	background-color: rgb(119, 136, 153);
+	background: url(http://tzportfolio.s3.amazonaws.com/backgrounds/bg_Library.jpg) no-repeat center center fixed;
+	background-size: cover;	
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+}
+#details.wrap{
+	background-color: rgb(119, 136, 153);
+	background: url(http://tzportfolio.s3.amazonaws.com/backgrounds/bg_spotlight.jpg) no-repeat center center fixed;
+	background-size: cover;	
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+}
+#samples.wrap{
+	background-color: rgb(119, 136, 153);
+	background: url(http://tzportfolio.s3.amazonaws.com/backgrounds/gallery2.jpg) no-repeat center center fixed;
+	background-size: cover;	
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+}
+#footer{
+	background-color: #353b49;
+}
+/* login */
+
 #loginHead{
 	background:rgba(67, 10, 31, 1);
 	border-bottom: 5px #fff solid;
@@ -90,17 +136,17 @@ a{
 	display: block;
 	width: 100%;
 	font-size: 2em;
-	color: whitesmoke;
+	color: #F5F5F5;
 	text-align: center;
 	margin: 0px auto 10px auto;
 }
 .label{
 	display: inline-block;
-	color:whitesmoke;
+	color:#F5F5F5;
 	margin: 10px 0px 0px 36px;
 }
 .labelRemember{
-	color:whitesmoke;
+	color:#F5F5F5;
 	margin-left:5px;	
 }
 .input{
@@ -117,7 +163,7 @@ a{
 	position:absolute;
 	bottom:5px;
 	border-top: 5px #fff solid;
-	color:whitesmoke;
+	color:#F5F5F5;
 	text-align:center;
 	height: 20px;
 }
@@ -212,7 +258,7 @@ a{
 /* body structure */
 
 #body{
-	background-color:whitesmoke;
+	background-color:#F5F5F5;
 	margin:10px auto auto auto;
 }
 #intro, #projects, #products, #details, #samples, #footer{
@@ -285,54 +331,7 @@ a{
 #facebook:hover{
 	background-image:url(http://tzportfolio.s3.amazonaws.com/icons/facebook-hover.jpg);
 }
-/* Backgrounds */
-#header{
-	background-color: rgba(67, 10, 31, 0.7);
-}
-#headerBackground{
-	background-color: rgb(67, 10, 31);
-}
-#intro.wrap{
-	background-color: #353b49;	
-}
-#projects.wrap{
-	background-color: lightslategrey;
-	background: url(http://tzportfolio.s3.amazonaws.com/backgrounds/bg_toolShop.jpg) no-repeat center center fixed;
-	background-size: cover;	
-	-moz-background-size: cover;
-	-webkit-background-size: cover;
-	-o-background-size: cover;
-}
-#products.wrap{
-	background-color: lightslategrey;
-	background: url(http://tzportfolio.s3.amazonaws.com/backgrounds/bg_Library.jpg) no-repeat center center fixed;
-	background-size: cover;	
-	-moz-background-size: cover;
-	-webkit-background-size: cover;
-	-o-background-size: cover;
-}
-#details.wrap{
-	background-color: lightslategrey;
-	background: url(http://tzportfolio.s3.amazonaws.com/backgrounds/bg_spotlight.jpg) no-repeat center center fixed;
-	background-size: cover;	
-	-moz-background-size: cover;
-	-webkit-background-size: cover;
-	-o-background-size: cover;
-}
-#samples.wrap{
-	background-color: lightslategrey;
-	background: url(http://tzportfolio.s3.amazonaws.com/backgrounds/gallery2.jpg) no-repeat center center fixed;
-	background-size: cover;	
-	-moz-background-size: cover;
-	-webkit-background-size: cover;
-	-o-background-size: cover;
-}
-#details.wrap, #samples.wrap{
 
-}
-#footer{
-	background-color: #353b49;
-}
 /* Borders and Shadows */
 .projectGallery, .productGallery, #projectPreserving, #projectPreserving:hover, #projectLamp, #projectLamp:hover, .productLandingImage, .description1, .webRightDescription, .videoLeftDescription, .printRightDescription, .webSample, .webSample:hover, .videoSample, .videoSample:hover, .printSample, .printSample:hover, #wSampHpn, #wSampHpn:hover, #vSampHpn, #vSampHpn:hover, #pSamp, #pSamp:hover,  #wSampTs, #wSampTs:hover, #vSampTs, #vSampTs:hover, #wSampTsqs, #wSampTsqs:hover, #vSampTsqs, #vSampTsqs:hover, #wSampCltc, #wSampCltc:hover, #vSampCltc, #vSampCltc:hover, #wSampAp, #wSampAp:hover, #vSampAp, #vSampAp:hover, #wSampLamp, #wSampLamp:hover, #vSampLamp, #vSampLamp:hover{
 	border-radius: 2px 2px 2px 2px;
@@ -455,7 +454,7 @@ a{
 	visibility:hidden;
 }
 .projectGallery, .productGallery{
-	border: 3px double whitesmoke;
+	border: 3px double #F5F5F5;
 	margin: 0 auto 10px auto;
 }
 .projectGallery{
@@ -599,7 +598,7 @@ a{
 }
 /* hover copy */
 .eCopy{
-	color: whitesmoke;
+	color: #F5F5F5;
 	text-align: center;
 	font-style: italic;
 	font-family: AvenirRoman, Arial, sans-serif;
@@ -664,8 +663,8 @@ a{
 	position: relative;
 	width: 105px;
 	height: 150px;
-	background: whitesmoke;
-	border: 3px double grey;
+	background: #F5F5F5;
+	border: 3px double #808080;
 	float: right;
 	margin-right: 5px;
 	list-style-type: none;
