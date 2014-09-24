@@ -145,8 +145,8 @@ a{
 	-webkit-border-radius: 3px 3px 3px 3px;
 	-moz-border-radius: 3px 3px 3px 3px;
 	box-shadow: 0px 0px 50px 15px rgba(66, 255, 225, 0.46);
-	-webkit-box-shadow: 0px 0px 50px 15px rgba(66, 255, 225, 0.46);
-	-moz-box-shadow: 0px 0px 50px 15px rgba(66, 255, 225, 0.46);
+	-webkit-box-shadow: 0px 0px 50px 15px rgba(255, 66, 66, 0.9);
+	-moz-box-shadow: 0px 0px 50px 15px rgba(255, 66, 66, 0.9);
 }
 .loginCopy{
 	display: block;
