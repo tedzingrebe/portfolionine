@@ -25,7 +25,10 @@ h1 {
 	margin: 20px auto 0px auto;
 }
 .bottomMg{
-	margin-bottom:35px;
+	margin-bottom:50px;
+}
+.bottomMgPage{
+	margin-bottom:20px;
 }
 h2 {
 	font-family: AvenirRoman, Arial, sans-serif;
@@ -51,7 +54,7 @@ a{
 }
 .landingStyle1{
 	font-size: 2.5em;
-	margin-top: -30px;
+	margin-top: -50px;
 }
 .landingStyle2{
 	font-size: 2em;
@@ -85,7 +88,7 @@ a{
 }
 #projects.wrap{
 	background-color: rgb(119, 136, 153);
-	background: url(http://tzportfolio.s3.amazonaws.com/backgrounds/bg_toolShop.jpg) no-repeat center center fixed;
+	background: url(http://tzportfolio.s3.amazonaws.com/backgrounds/bg_Projects.jpg) no-repeat center center fixed;
 	background-size: cover;	
 	-moz-background-size: cover;
 	-webkit-background-size: cover;
@@ -93,7 +96,7 @@ a{
 }
 #products.wrap{
 	background-color: rgb(119, 136, 153);
-	background: url(http://tzportfolio.s3.amazonaws.com/backgrounds/bg_Library.jpg) no-repeat center center fixed;
+	background: url(http://tzportfolio.s3.amazonaws.com/backgrounds/bg_Products.jpg) no-repeat center center fixed;
 	background-size: cover;	
 	-moz-background-size: cover;
 	-webkit-background-size: cover;
@@ -101,7 +104,7 @@ a{
 }
 #details.wrap{
 	background-color: rgb(119, 136, 153);
-	background: url(http://tzportfolio.s3.amazonaws.com/backgrounds/bg_spotlight.jpg) no-repeat center center fixed;
+	background: url(http://tzportfolio.s3.amazonaws.com/backgrounds/bg_Details.jpg) no-repeat center center fixed;
 	background-size: cover;	
 	-moz-background-size: cover;
 	-webkit-background-size: cover;
@@ -109,7 +112,7 @@ a{
 }
 #samples.wrap{
 	background-color: rgb(119, 136, 153);
-	background: url(http://tzportfolio.s3.amazonaws.com/backgrounds/gallery2.jpg) no-repeat center center fixed;
+	background: url(http://tzportfolio.s3.amazonaws.com/backgrounds/bg_Samples.jpg) no-repeat center center fixed;
 	background-size: cover;	
 	-moz-background-size: cover;
 	-webkit-background-size: cover;
@@ -437,7 +440,7 @@ a{
 	background-size: 100%;
 }
 #bodyAdv{
-	margin:20px auto 0px auto;
+	margin:25px auto 0px auto;
 }
 #topAnchor{
 	position: fixed;
@@ -477,7 +480,7 @@ a{
 	width:625px;
 }
 .productGallery{
-	width:858px;
+	width:800px;
 }
 #webGallery, #videoGallery, #printGallery{
 	display: table;
@@ -549,7 +552,7 @@ a{
 	height:265px;
 }
 #productHpn, #productAp, #productTs, #productTsqs, #productEcltc{
-	height:97px;
+	height:90px;
 }
 #vSamp{
 	height:290px;	
@@ -628,7 +631,7 @@ a{
 	margin-right: 40px;
 }
 #productCopy{
-	margin-top: 35px;
+	margin-top: 31px;
 	float: right;
 	margin-right: 40px;
 }
@@ -878,7 +881,12 @@ h2{
 	height: 324px;
 	margin-top: 7px;
 }
-
+.landingStyle2{
+	font-size: 26px;
+}
+.landingStyle3{
+	font-size: 1em;
+}
 /* Sample Galleries */
 .projectGallery{
 	width:500px;
@@ -1022,6 +1030,12 @@ h2{
 }
 p, .description1 ul li, .webRightDescription ol li, .videoLeftDescription ol li, .printRightDescription ol li{
 	margin: auto 10px 4px 0px;	
+}
+.landingStyle2{
+	font-size: 26px;
+}
+.landingStyle3{
+	font-size: 1em;
 }
 /* landing page images */
 .productLandingImage{
@@ -1183,6 +1197,12 @@ h2{
 p, .description1 ul li, .webRightDescription ol li, .videoLeftDescription ol li, .printRightDescription ol li{
 	font-size:.7em;
 	margin: auto 10px 4px 5px;	
+}
+.landingStyle2{
+	font-size: 17px;
+}
+.landingStyle3{
+	font-size: 14px;
 }
 /* landing page images */
 .productLandingImage{
