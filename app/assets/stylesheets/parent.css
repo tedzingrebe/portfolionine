@@ -682,12 +682,15 @@ a{
 	position: relative;
 	width: 105px;
 	height: 150px;
-	background: #F5F5F5;
-	border: 3px double #808080;
+	background:rgba(196, 250, 255, 0.9);
 	float: right;
 	margin-right: 5px;
 	list-style-type: none;
 	padding-left: 5px;
+	border: 3px double #202B63;
+	border-radius:5px 5px 5px 5px;
+	-webkit-border-radius:5px 5px 5px 5px;
+	-moz-border-radius:5px 5px 5px 5px;
 }
 
 .click-nav ul li a {
@@ -1162,6 +1165,9 @@ p, .description1 ul li, .webRightDescription ol li, .videoLeftDescription ol li,
 /* 0 - 479 */
 @media screen and (min-width: 0px) and (max-width: 479px){
 /* Mobile Specfic */
+#contentWrap{
+	height: 92%;
+}
 #overview, #contribution{
 	display:none;
 }
