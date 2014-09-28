@@ -1166,7 +1166,7 @@ p, .description1 ul li, .webRightDescription ol li, .videoLeftDescription ol li,
 @media screen and (min-width: 0px) and (max-width: 479px){
 /* Mobile Specfic */
 #contentWrap{
-	height: 92%;
+	height: 90%;
 }
 #overview, #contribution{
 	display:none;
