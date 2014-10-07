@@ -50,6 +50,8 @@ end
 # Use unicorn as the app server
  gem 'unicorn'
  
+ gem 'newrelic_rpm'
+ 
  gem 'heroku-deflater', :group => :production
 
 # Use Capistrano for deployment
