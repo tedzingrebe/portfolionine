@@ -41,8 +41,24 @@
 
 						<li><%= link_to "Log out", destroy_user_session_path %></li>
 
-					<% end %> 	
+					<% end %> 
 			</div>
+				<div id="login">
+					<div class="loginCopy">Log in</div>
+					<%= form_for(:user, :url => session_path(:user)) do |f| %>
+					<div><%= f.label :email,  :class => "label" %><br />
+					  <%= f.text_field :email, autofocus: true,  :class => "input" %></div>
+					
+					<div><%= f.label :password,  :class => "label" %><br />
+					  <%= f.password_field :password, autocomplete: "off",  :class => "input" %></div>
+					<div>
+					  <%= f.check_box :remember_me,  :class => "label" %><%= f.label :remember_me ,  :class => "labelRemember" %></div>
+					
+					  <div><%= f.submit 'Sign in',  :class => "login"  %></div>
+					
+					  <%= link_to "Forgot your password?", new_password_path(:user) %>
+					<% end %>
+				</div>
 		</div>
 	</div>
 </div>
