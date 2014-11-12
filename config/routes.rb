@@ -1,6 +1,6 @@
 Portfolio::Application.routes.draw do
 
-  devise_for :users
+  devise_for :user
   unauthenticated do
     root to: "pages#index", as: :unauthenticated_root
   end
