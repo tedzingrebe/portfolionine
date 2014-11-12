@@ -31,7 +31,7 @@ ActiveRecord::Schema.define(version: 20140903010615) do
   add_index "models", ["email"], name: "index_models_on_email", unique: true
   add_index "models", ["reset_password_token"], name: "index_models_on_reset_password_token", unique: true
 
-  create_table "users", force: true do |t|
+  create_table "user", force: true do |t|
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
     t.string   "reset_password_token"
@@ -46,7 +46,7 @@ ActiveRecord::Schema.define(version: 20140903010615) do
     t.datetime "updated_at"
   end
 
-  add_index "users", ["email"], name: "index_users_on_email", unique: true
-  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+  add_index "user", ["email"], name: "index_user_on_email", unique: true
+  add_index "user", ["reset_password_token"], name: "index_user_on_reset_password_token", unique: true
 
 end
