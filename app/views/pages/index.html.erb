@@ -22,7 +22,7 @@
 		<div id="loginContainer">
 				<div id="login">
 					<div class="loginCopy">Log in</div>
-					<%= form_for(:user, :url => session_path(:user)) do |f| %>
+					<%= form_for(:portuser, :url => session_path(:portuser)) do |f| %>
 					<div><%= f.label :email,  :class => "label" %><br />
 					  <%= f.text_field :email, autofocus: true,  :class => "input" %></div>
 					
