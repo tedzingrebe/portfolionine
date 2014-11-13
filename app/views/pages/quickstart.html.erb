@@ -19,7 +19,7 @@
 					<li><%= link_to 'Projects', landing_path(@landing, :anchor => "aProjects") %> |</li>
 					<li><%= link_to 'Products', landing_path(@landing, :anchor => "aProducts") %> |</li>
 					<li><a href="#aContact">Contact</a> |</li>
-					<li><%= link_to('Logout', destroy_user_session_path) %></li>
+					<li><%= link_to('Logout', destroy_portuser_session_path) %></li>
 				</ul>
 			</div>
 			
@@ -48,7 +48,7 @@
 							</li>
 							<li><a href="#aContact"><img class="mobileIcon" src="http://tzportfolio.s3.amazonaws.com/icons/i-3.png">Contact</a></li>
 							<li>
-								<%= link_to destroy_user_session_path do %>
+								<%= link_to destroy_portuser_session_path do %>
 								<img class="mobileIcon" src="http://tzportfolio.s3.amazonaws.com/icons/i-3.png">
 								Log Out
 								<% end %>
