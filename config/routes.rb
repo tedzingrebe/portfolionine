@@ -8,6 +8,7 @@ Portfolio::Application.routes.draw do
     root to: "pages#landing", as: :authenticated_root
   end
   
+  
   get "home" => "pages#index.html"
   get "projects" => "pages#landing.html", :anchor => "aProjects" #creates landing_path
   get "landing" => "pages#landing" #creates landing_path
