@@ -1,7 +1,12 @@
 Portfolio::Application.routes.draw do
-  
-  root to: "home" => "pages#index"
-  
+
+  devise_for :portuser
+  unauthenticated do
+    root to: "pages#index", as: :unauthenticated_root
+  end
+  authenticated do
+    root to: "pages#landing", as: :authenticated_root
+  end
   
   get "home" => "pages#index.html"
   get "projects" => "pages#landing.html", :anchor => "aProjects" #creates landing_path
