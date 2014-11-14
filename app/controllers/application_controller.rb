@@ -5,11 +5,11 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
   before_action :authenticate_portuser!, except: [:index]
 
-  def after_sign_in_path_for(portuser)
-      :authenticated_root
+  authenticated :user do
+    root to: "pages#landing", as: :authenticated_root
   end
-  def after_sign_out_path_for(portuser)
-      :unauthenticated_root
+
+  unauthenticated do
+    root to: "pages#index"
   end
-    
 end
