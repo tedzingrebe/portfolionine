@@ -1,13 +1,11 @@
 Portfolio::Application.routes.draw do
 
   devise_for :portuser
-  devise_scope :portuser do
-    authenticated :portuser do
-      root :to => 'pages#landing'
-    end
-    unauthenticated :portuser do
-      root :to => 'pages#index', as: :unauthenticated_root
-    end
+  unauthenticated do
+    root to: "pages#index", as: :unauthenticated_root
+  end
+  authenticated do
+    root to: "pages#landing", as: :authenticated_root
   end
   
   

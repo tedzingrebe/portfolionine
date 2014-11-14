@@ -1,6 +1,6 @@
 class CustomRedirection < Devise::FailureApp
    def redirect_url
-     :unauthenticated_root
+     :authenticated_root
    end
    def respond
      if http_auth?
